@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #f7f6f3;
+  --color-surface: #edebe7;
+  --color-navy: #1e2333;
+  --color-navy-muted: #5f6478;
+  --color-border: #dddbd6;
+  --color-accent: #e8d96a;
+  --color-accent-hover: #d4c54e;
+  --color-accent-text: #2a2700;
+  --color-danger: #b03a2e;
+  --color-danger-hover: #922e24;
+  --color-danger-surface: #faeae8;
+
+  --font-ui: 'DM Sans', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: #f7f6f3;
+  color: #1e2333;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.55s ease forwards;
+}
+.delay-1 { animation-delay: 60ms; }
+.delay-2 { animation-delay: 180ms; }
+.delay-3 { animation-delay: 300ms; }
+.delay-4 { animation-delay: 420ms; }
+
+.card-hover {
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+.card-hover:hover {
+  box-shadow: 0 6px 20px rgba(30, 35, 51, 0.09);
+  transform: translateY(-2px);
+  border-color: #c8c5bf;
+}

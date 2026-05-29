@@ -188,7 +188,7 @@ const problems: ProblemItem[] = [
       </svg>
     ),
     title: 'You apply and never hear back',
-    desc: "The silence isn't human rejection — it's an algorithm eliminating your CV before anyone reads it.",
+    desc: "The silence isn't human rejection; it's an algorithm eliminating your CV before anyone reads it.",
   },
   {
     num: '02',
